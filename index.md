@@ -1,6 +1,6 @@
 <!-- .slide: data-background="images/background/00.svg" -->
 
-# Web Accessibility Best Practices
+# Introduction to Web Accessibility
 
 <p class="author">
     Tao Zhang
