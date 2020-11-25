@@ -3,34 +3,10 @@
 # Web Accessibility Best Practices
 
 <p class="author">
-    Kelly Hutchins<br>
     Tao Zhang
 </p>
 
-<p id="slidesInfo">Jan 23, 2019 · Esri GeoDev Webinar</p>
-
-
-
----
-<!-- .slide: data-background="images/background/01.svg" -->
-
-<p class="centerp">
-    <img id="gotowebinar" src="images/gotowebinar.png" alt="Screenshots of Gotowebinar panel">
-</p>
-
-
-
----
-<!-- .slide: data-background="images/background/00.svg" -->
-
-# Web Accessibility Best Practices
-
-<p class="author">
-    Kelly Hutchins<br>
-    Tao Zhang
-</p>
-
-<p id="slidesInfo">Jan 23, 2019 · Esri GeoDev Webinar</p>
+<p id="slidesInfo">Dec XX, 2020 · Esri Beijing R&D Center</p>
 
 
 
@@ -80,23 +56,6 @@ Make content usable for everyone regardless of abilities
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-<h2 class="twocoltitle">How is Esri doing?</h2>
-
-<div class="twocol">
-    <ul class="leftcol">
-        <li>Reviewing products internally for compliance</li>
-        <li>Fixing accessibility issues</li>
-        <li>Working accessibility into new features</li>
-        <li>Sharing knowledge and best practices</li>
-    </ul>
-    <img class="rightcol" src="images/storymap-announcement2.png" alt="Screenshots of GeoNet accessibility group and announcement of new accessibility features in Story Maps"/>
-</div>
-
-
-
----
-<!-- .slide: data-background="images/background/01.svg" -->
-
 <h2 class="twocoltitle">WCAG</h2>
 
 Web Content Accessibility Guidelines
@@ -111,6 +70,7 @@ Web Content Accessibility Guidelines
 </p>
 
 
+
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
@@ -119,6 +79,7 @@ Web Content Accessibility Guidelines
 <p class="centerp">
     <img id="wcagoverview" src="images/wcag_overview.png" alt="Overview diagram of WCAG principles, success criteria, and levels">
 </p>
+
 
 
 ---
@@ -142,27 +103,6 @@ Web Content Accessibility Guidelines
 - How to get started in accessibility
 - Simple and effective actions
 - Finding issues before working with the code
-
-
-
----
-<!-- .slide: data-background="images/background/01.svg" -->
-
-## Past presentations
-
-- [DIY Accessibility](https://youtu.be/VNL4DHSS6RE)
-- [Accessible Web Mapping Apps](https://youtu.be/mDb2goQ0mDM)
-
-
-
----
-<!-- .slide: data-background="images/background/01.svg" -->
-
-## Presentations at DevSummit 2019
-
-- [DIY Accessibility](https://devsummit2019.schedule.esri.com/schedule/50197386), March 6, 5:30-6:30pm
-- [Accessible Web Mapping Apps](https://devsummit2019.schedule.esri.com/schedule/672667633), March 7, 9:00-10:00am
-- [Improving Accessibility with ArcGIS Online Web Apps](https://devsummit2019.schedule.esri.com/schedule/517986417), March 7, 2:30-3:00pm
 
 
 
@@ -315,6 +255,7 @@ Web Content Accessibility Guidelines
 - No need to use the phrase "image of ..." to describe images
 
 
+
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
@@ -333,6 +274,8 @@ Web Content Accessibility Guidelines
     </div>
 </div>
 
+
+
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
@@ -343,6 +286,7 @@ Web Content Accessibility Guidelines
 </p>
 
 <p class="source">Map View documentation: <a href="https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html">https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html</a></p>
+
 
 
 ---
@@ -356,6 +300,9 @@ Web Content Accessibility Guidelines
 
 <p class="source">GitHub repo: <a href="https://github.com/Esri/a11y-map">https://github.com/Esri/a11y-map</a></p>
 
+
+
+
 ---
 
 <!-- .slide: data-background="images/background/01.svg" -->
@@ -365,6 +312,9 @@ Web Content Accessibility Guidelines
 </video>
 
 <p class="source"><a href="https://github.com/jimmieego/Web-Accessibility-Best-Practices/blob/masterimages/a11y-map-demo.mp4">Video link</a></p>
+
+
+
 
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
@@ -466,8 +416,3 @@ Web Content Accessibility Guidelines
 <!-- .slide: data-background="images/background/02.svg" -->
 
 ### Questions?
-
-<ul class="source">
-    <li>Slides: https://arcg.is/1a910T</li>
-    <li>ArcGIS Online Accessibility Survey: https://arcg.is/8m9am</li>
-</ul>
