@@ -1,1 +1,1 @@
-# Introduction of Web Accessibility
+# Introduction to Web Accessibility
