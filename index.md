@@ -90,6 +90,7 @@ Web Content Accessibility Guidelines
 - Focus and tab order
 - Color and color contrast
 - Text alternatives
+- Semantic HTML
 - Map for non-sighted users
 - A DIY accessibility test process
 
@@ -254,6 +255,84 @@ Web Content Accessibility Guidelines
 - Be accurate in presenting the content in images
 - Be succinct
 - No need to use the phrase "image of ..." to describe images
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+## Semantic HTML
+
+Choose the right HTML element to reflect content structure and meaning.
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+### Structure example
+
+```html
+<h2>User settings</h2>
+
+<!-- Don't do this -->
+<span class="heading-2">Popup settings</span> 
+```
+
+- The browser does not recognize the second structure as a level 2 heading.
+- The `<span>` element is semantically neutral.
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+### Meaning
+
+Most HTML elements have an implicit role that defines the element’s purpose:
+
+- `<a>`: “link”
+- `<img>`: "graphic" or "image"
+- `<header>`: "banner"
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+### Meaning example
+
+```html
+<button>Save changes</button>
+
+<!-- Don't do this -->
+<div class="btn btn--primary">Save changes</div>
+```
+
+- The browser does not know that the `<div>` element is intended as a button
+- The `<div>` element does not have an implicit role or accessible name.
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+### Why semantic HTML
+
+- Consistent understanding of content structure and native behavior. <!-- .element: class="fragment" -->
+- Clear communication of content’s meaning and purpose. <!-- .element: class="fragment" -->
+- We get structure and meaning for free with semantic elements. <!-- .element: class="fragment" -->
+- Significant more work to polyfill semantic neutral elements. <!-- .element: class="fragment" -->
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+### Use `button`
+
+- Buttons are automatically focusable. <!-- .element: class="fragment" -->
+- Screen readers will announce button in focus and offer ways to click button. <!-- .element: class="fragment" -->
+- Space and Enter keys are automatically supported when binding a click event listener to a button. <!-- .element: class="fragment" -->
 
 
 
