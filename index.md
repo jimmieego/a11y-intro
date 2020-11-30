@@ -167,7 +167,8 @@ Web Content Accessibility Guidelines
 
 <ul>
     <li class="fragment"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html">WCAG 1.4.1</a>: Color is not the only visual means of conveying information.</li>
-    <li class="fragment"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG 1.4.3</a>: Text needs to have contrast ratio of at least 4.5:1.</li>
+    <li class="fragment"><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG 1.4.3</a>: Text needs to have contrast ratio of at least 4.5:1.</li> 
+    <li class="fragment"><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">WCAG 1.4.11</a>: The visual presentation of User Interface Components and Graphical Objects have a contrast ratio of at least 3:1 against adjacent color(s).</li>
 </ul>
 
 
@@ -387,6 +388,7 @@ Web Content Accessibility Guidelines
 
 ## Screen reader basics
 
+- The *browse* and *tab* modes
 - [A11ycasts: VoiceOver](https://youtu.be/5R-6WvAihms)
 - [A11ycasts: NVDA](https://youtu.be/Jao3s_CwdRU)
 
