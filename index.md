@@ -343,6 +343,7 @@ Web Content Accessibility Guidelines
     <li>Tests rendered page in browser</li>
     <li>Less false positives</li>
     <li>Accessible</li>
+    <li>Covers about 30% of accessibility issues</li>
 </ul>
 
 
@@ -351,7 +352,8 @@ Web Content Accessibility Guidelines
 <!-- .slide: data-background="images/background/01.svg" -->
 
 <p class="centerp">
-    <a href="demos/map-demo/index.html">Demo: Automated test using aXe</a>
+    <!-- <a href="demos/map-demo/index.html">Demo: Automated test using aXe</a> -->
+    <a href="https://experience.arcgis.com/experience/753ad2ebd3554fa696885b8c366c3049/page/home/">Demo: Automated test using aXe</a>
 </p>
 
 
