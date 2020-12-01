@@ -1,12 +1,12 @@
 <!-- .slide: data-background="images/background/00.svg" -->
 
-# Introduction to Web Accessibility
+# Introduction to Accessibility
 
 <p class="author">
     Tao Zhang
 </p>
 
-<p id="slidesInfo">Dec XX, 2020 · Esri Beijing R&D Center</p>
+<p id="slidesInfo">Dec 4, 2020 · Esri Beijing R&D Center</p>
 
 
 
