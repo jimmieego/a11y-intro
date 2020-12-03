@@ -142,15 +142,6 @@ Web Content Accessibility Guidelines
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-<p class="centerp">
-    <a href="https://arcgis103.esri.ca/WCAG-Configurable-Template-Test/?appid=e951691e3893444ea64e7c29d086e30c">Example: Accessible App of Electric Charging Stations</a>
-</p>
-
-
-
----
-<!-- .slide: data-background="images/background/01.svg" -->
-
 ## Test focus and tab order
 
 - Tab through page to verify all interactive elements have focus
@@ -261,9 +252,20 @@ Web Content Accessibility Guidelines
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## Semantic HTML
+<h2 class="twocoltitle">Semantic HTML</h2>
 
-Choose the right HTML element to reflect content structure and meaning.
+<p>Choose the right HTML element to reflect content structure and meaning.</p>
+<p>Accessibility advocates aren't yelling at developers to use semantic HTML because it's exciting, but because it's well understood how users benefit from it.</p>
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+### Structure
+
+- Common understanding of what each element represents and does.
+- Browsers and other user agents provide default functionality and styling.
 
 
 
@@ -322,6 +324,26 @@ Most HTML elements have an implicit role that defines the element’s purpose:
 - Clear communication of content’s meaning and purpose. <!-- .element: class="fragment" -->
 - We get structure and meaning for free with semantic elements. <!-- .element: class="fragment" -->
 - Significant more work to polyfill semantic neutral elements. <!-- .element: class="fragment" -->
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
+ ## Semantic HTML elements
+
+- `<ul>` or `<ol>`: a series of items in a list
+- `<p>`: paragraph
+- `<table>`: tabular data
+- `<button>`: a clickable button
+- `<label>`: text label for a form control
+
+<p style="margin-top: 50px;">
+    <ul style="font-size: 0.5em;">References:
+        <li><a href="https://codepen.io/mi-lee/pan-overview-of-html5-semantics">An Overview of HTML5 Semantics</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HElement">HTML elements organized by purpose</a></li>
+    </ul>
+</p>
 
 
 

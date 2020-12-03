@@ -1,12 +1,12 @@
 # Presenter notes
 
-## 5. Wide range of disabilities
+## Wide range of disabilities
 
 There are many different types of disabilities affecting people's abilities to touch, see, hear, or speak.
 
 "Disabilities" could be permanent, temporary, or situational. For example, a parent may be holding a child while trying to use the phone; or a person may be in a noisy environment while trying to watch a video. People's normal abilities may be constrained by the situation, but they still need the same access to information.
 
-## 6. Why is accessibility important?
+## Why is accessibility important?
 
 In the US, the Department of Justice (DOJ) published the Americans with Disabilities Act (ADA) Standards for Accessible Design in September 2010. These standards state that all electronic and information technology must be accessible to people with disabilities.
 
@@ -14,19 +14,19 @@ Section 508 regulations are an amendment to the Rehabilitation Act of 1973 and a
 
 In addition to the law requirements, the web is originally designed for everyone. Everyone has abilities and limits to those abilities. Those limits should not be treated as obstacles to accessing the web.
 
-Implementing accessibility can deepen our understanding of design. Considering things like tab order can take us beyond a vision of design as the look and feel and into the realm of user experience and usability. Accessibility is just another aspect of considering how to best build our sites to meet diverse human needs. The more we consider accessibility, the more profoundly we will understand user experience and anticipate user behavior—making us better designers.
+Implementing accessibility can deepen our understanding of design. Considering things like tab order can take us beyond a vision of design as the look and feel and into the realm of user experience and usability. Accessibility is just another aspect of considering how to best build our products to meet diverse user needs. The more we consider accessibility, the more profoundly we will understand user experience and anticipate user behavior—making us better designers.
 
-## 8. WCAG
+## WCAG
 
 The Web Content Accessibility Guidelines (WCAG) is developed by the W3C. It is the international standard for making web content accessible. WCAG has been adopted by laws and standards in a lot of countries and regions. In the US, the Section 508 regulations incorporates WCAG 2.0.
 
-## 9. WCAG 2.0 and 2.1
+## WCAG 2.0 and 2.1
 
 WCAG 2.0 was published in December 2008 and WCAG 2.1 was published in June 2018. WCAG 2.1 extends WCAG 2.0 by adding a number of new success criteria and guidelines.
 
-Because WCAG 2.1 is relatively new and we are still learning the new guidelines. This webinar is based on the success criteria of WCAG 2.0.
+Note that WCAG 2.1 is relatively new and Section 508 is based on WCAG 2.0. 
 
-## 10. Overview of WCAG 2.0
+## Overview of WCAG 2.0
 
 WCAG are organized by four basic principles:
 
@@ -35,31 +35,24 @@ WCAG are organized by four basic principles:
 3. Content and controls must be **understandable**.
 4. Content must be **robust** enough to work with current and future technologies.
 
-Each principle contains testable success criteria, which are set at three levels: A, AA, and AAA.
+Each principle contains testable success criteria, which are set at three levels: A, AA, and AAA. In most cases, we are aiming for the AA conformance level, as the A level is really the most basic requirements, and achieving AAA could be costly.
 
-## 11. What we will cover today
+## What we will cover today
 
-So we have selected a few topics that are probably the most fundamental accessibility requirements for any web pages: keyboard focus, tab order, color and color contrast, and text alternatives. These are great foundations to start learning about accessibility. They are easy to relate to and test, and they benefit virtually all users.
+I have selected a few topics that are probably the most fundamental accessibility requirements for any web pages: keyboard focus, tab order, color and color contrast, text alternatives, and semantic HTML. These are great foundations to start learning about accessibility. They are easy to relate to and test, and they benefit virtually all users.
 
-For each topic, we will discuss relevant WCAG success criteria and then we will show you a few examples of how to meet those success criteria.
+For each topic, I will discuss relevant WCAG success criteria and then I will show you a few examples of how to meet those success criteria.
 
-One question we get a lot is how to make maps accessible, particularly for non-sighted users. In this webinar we will show our initial attempt at addressing this challenge. And we certainly welcome any input or feedback from you.
+One popular question is how to make maps accessible, particularly for non-sighted users. I will show an initial attempt at addressing this challenge.
 
-Finally, we will talk about a do-it-yourself process for testing accessibility. Working to accommodate a diverse range of abilities means there are a correspondingly diverse range of issues to consider. We break down these issues into a logical, step by step process so that we all can follow.
+Finally, I will talk about a do-it-yourself process for testing accessibility. Working to accommodate a diverse range of abilities means there are a correspondingly diverse range of issues to consider. I break down these issues into a logical, step by step process so that we all can follow.
 
-## 12. Our focus today
+## Our focus today
 
-We understand that accessibility can be a complex and difficult topic. So in this webinar, we will be focusing on the fundamental topics of accessibility, how to get started, and how we can take simple actions to identify accessibility issues.
+I understand that accessibility can be a complex and difficult topic. So today I will be focusing on the fundamental topics of accessibility, how to get started, and how we can take simple actions to identify accessibility issues.
 
-## 13. Past presentations
 
-We will try not to dive deep into the code for this webinar. If you are a developer who is interested in more technical discussions, we gave two presentations about web accessibility at last year's Esri Developer Summit. We have included links to the recordings on this slide.
-
-## 14. Presentations at DevSummit 2019
-
-In addition to today's webinar, there will be three presentations on web accessibility at this year's Developer Summit. I have listed the links and times on this slide. Even though the titles are the same, we will prepare new content for the presentations. So if you are planning to attend the Developer Summit this year, we hope to see you at these presentations.
-
-## 15. Focus and tab order
+## Focus and tab order
 
 ### WCAG 2.4.7 Clear focus
 
@@ -87,7 +80,7 @@ A keyboard trap occurs when a user can get into a subsection on a web page by us
 
 A common exception of this rule is when we show a modal dialog to the user, the dialog needs to trap keyboard focus until the user chooses to close the dialog. This is because the dialog introduces a new workflow to the user and needs the user's input to complete the new workflow.
 
-## 20. Color and color contrast
+## Color and color contrast
 
 ### WCAG 1.4.1 Color only info
 
@@ -101,15 +94,19 @@ This guideline is not about removing color from our web pages or making web page
 
 All of us will benefit from a good contrast between text and its background color. For users with visual impairments, good contrast is essential.
 
-## 22. White text on colored background
+### WCAG 1.4.11 
+
+This is a new success criterion added to WCAG 2.1.
+
+## White text on colored background
 
 When using white text on a colored background, it is sometimes hard to achieve a good contrast. You may be surprised how dark the color needs to be to meet the 4.5 contrast ratio. This can create hierarchy issues when those elements are not supposed to be the focus of the page - dark colored backgrounds will really grab the user's attention.
 
-## 23. Flipping the contrast
+## Flipping the contrast
 
 You can solve the problem by flipping the contrast. Instead of using light text on a dark colored background, use dark colored text on a light colored background. The color is still there to help support the text, but it's way less prominent and does not interfere as much with other parts of the page.
 
-## 25. Text alternatives
+## Text alternatives
 
 ### WCAG 1.1.1 Text alternatives
 
@@ -117,26 +114,27 @@ Alternative (or 'alt') text is a text replacement for non-text content like imag
 
 A common exception for this guideline is that if an image is decorative and it does not convey meaning, we should set the alternative text to an empty string.
 
-## 28. Accessible maps
-There are several options for making map content accessible. If the map is a simple map showing a location or providing directions you can provide a text description of the map. Here’s an example where the map image shows the location of the Esri Olympia regional office with a text description below the map.
+## Accessible maps
+
+There are several options for making map content accessible. If the map is a simple map showing a location or providing directions, you can provide a text description of the map. Here’s an example where the map image shows the location of the Esri Olympia regional office with a text description below the map.
 
 If the map is more complicated and shows several features you can provide the information in an alternate format such as a text list of locations or a table.
 
-## 29. Default map navigation
+## Default map navigation
 
-The 2D Map View and 3D Scene View available in the Esri JavaScript api both provide out of the box support for navigating the map via the keyboard. Check out the documentation at <a href="https://developers.arcgis.com/javascript"/>https://developers.arcgis.com/javacript</a> for details.
+The 2D Map View and 3D Scene View available in the Esri JavaScript API both provide out of the box support for navigating the map via the keyboard. Check out the documentation at <a href="https://developers.arcgis.com/javascript">https://developers.arcgis.com/javacript</a> for details.
 
-## 32. DIY accessibility test
+## DIY accessibility test
 
-So we recommend a four-step process to test accessibility of web applications. The four steps are automated test, keyboard test, screen reader test, and color test.
+I recommend a four-step process to test accessibility of web applications. The four steps are automated test, keyboard test, screen reader test, and color test.
 
-This is also the process we follow at Esri. It breaks down the testing to a logic flow, and it minimizes the switching between different types of tests that we need to do.
+This process breaks down the testing to a logic flow, and it minimizes the switching between different types of tests that we need to do.
 
 ## 33. Automated test with aXe
 
 aXe is an extension that you can install in Chrome and Firefox. It tests the rendered page in Chrome and Firefox. It reports any violations against a set of accessibility rules and best practices. A big advantage of aXe, compared to other automated testing tools, is that it is relatively conservative, meaning it tends to report less false positives. And aXe itself is accessible. Keyboard users and non-sighted users should be able to use aXe for automated tests.
 
-(After demo:) I should point out that automated tests cannot replace manual tests using keyboard and screen reader. Automated test tools like aXe can help us quickly find certain types of issues, but not all. For example, an automated test tool can tell us an image is missing alt text, but it cannot judge whether an alt text is meaningful for the image.
+I should point out that automated tests cannot replace manual tests using keyboard and screen reader. Automated test tools like aXe can help us quickly find certain types of issues, but not all. For example, an automated test tool can tell us an image is missing alt text, but it cannot judge whether an alt text is meaningful for the image.
 
 ## 35. Keyboard test
 
@@ -152,11 +150,11 @@ A "screen reader" is the generic term for a program that helps blind people use 
 
 A blind person using a screen reader experiences a website linearly, a little bit at a time. If an element does not have enough information for the screen reader to read what it is, the blind user may have difficulty understanding what the element is meant for.
 
-Due to time limitation, we will not discuss details of using screen readers. But here is recommended pairing between screen readers and browsers. VoiceOver is the built-in screen reader in MacOS, so it works well with Safari. NVDA is a free screen reader in Windows and it is recommended for Firefox. Jaws is another screen reader in Windows and traditionally it works well with Microsoft browsers like IE and Edge. Jaws requires a paid license.
+Due to time limitation, I will not discuss details of using screen readers. But here is recommended pairing between screen readers and browsers. VoiceOver is the built-in screen reader in MacOS, so it works well with Safari. NVDA is a free screen reader in Windows and it is recommended for Firefox. Jaws is another screen reader in Windows and traditionally it works well with Microsoft browsers like IE and Edge. Jaws requires a paid license.
 
 ## 37. Screen reader basics
 
-We recommend these two video tutorials for VoiceOver and NVDA. They cover the basic commands to read and interact with web content for testing purposes. Both of the videos are parts of the a11ycasts series on Youtube. We will share this presentation so you will have the URLs.
+Note that screen readers have the browse and tab modes. For more details, I recommend these two video tutorials for VoiceOver and NVDA. They cover the basic commands to read and interact with web content for testing purposes. Both of the videos are parts of the a11ycasts series on Youtube. I will share this presentation so you will have the URLs.
 
 ## 38. Color test
 
@@ -164,4 +162,4 @@ The last step is manual color test. This step is necessary because automated tes
 
 ## Last
 
-That concludes our presentation. We will now move over to Amy for questions.
+That concludes our presentation. I will be happy to answer any questions you may have.
