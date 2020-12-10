@@ -51,7 +51,7 @@ References:
   - [Park Locator](http://servicesbeta.esri.com/demos/a11y/index.html)
 - Tools
   - [Enhanced focus](https://pauljadam.com/demos/focusvisible.html)
-  - `document.activeElement`
+  - Live Expression in Chrome DevTools: `document.activeElement` ([source](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus))
 
 ## Screen reader test
 

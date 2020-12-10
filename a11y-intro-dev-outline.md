@@ -2,21 +2,46 @@
 
 ## Semantic HTML
 
-### Accessibility tree
+Smeantics: The correct interpretation of the meaning of a word or sentence (code).
 
-- Browser's responsibility to expose accessibility tree to assistive technologies.
-- Shows how webpage is interpreted by assistive technologies and how accessible data are provided.
-- Assistive technologies simulate and relay user interactions like click and key press to accessibility tree.
-- As developers, we need to:
-  - Express the semantics of page correctly
-  - Specify accessible names and descriptions
-  - Make sure important elements have correct accessible roles, states, and properties
+Example
+
+```html
+<div id="header"></div>
+<div class="section">
+	<div class="article">
+		<div class="figure">
+			<img>
+			<div class="figcaption"></div>
+		</div>
+	</div>
+</div>
+<div id="footer"></div>
+```
+
+versus
+
+```html
+<header></header>
+<section>
+	<article>
+		<figure>
+			<img>
+			<figcaption></figcaption>
+		</figure>
+	</article>
+</section>
+<footer></footer>
+```
+
+- Easier to read and understand
+- Consistency
 
 ### Semantics in native HTML
 
 - Most HTML elements have implicit semantics (role and state).
 - Native HTML elements are recognized by browsers and work predictably on a variety of platforms.
-- We should take advantage of built-in accessibility by writing HTML that expresses the semantics of page elements.
+- We should take advantage of built-in accessibility by writing HTML that expresses the semantics (intended purposes) of page elements.
 - Example: `<a href="http://www.esri.com">Esri Homepage</a>`
   - Role="link"
   - Accessible name="Esri Homepage"
@@ -38,10 +63,10 @@
 
 ### Use cases of common semantic HTML elements
 
-- `ul` and `ol`
+- `ol` and `ul`: items on the list are ordered/unordered 
 - `button`: specify an action
 - `a`: specify a change in location
-- `<label>`
+- `<label>`: text capation for UI element
 
 ## Keyboard and focus management
 
@@ -98,6 +123,16 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
 - Native HTML semantics should still be used whenever possible, but ARIA is useful when certain semantics, design patterns, or interactions make it impossible to do so.
   - Example: a pop-up menu, no standard HTML element
   - Example: a semantic characteristic "the user needs to know about this as soon as possible"
+
+### Accessibility tree
+
+- Browser's responsibility to expose accessibility tree to assistive technologies.
+- Shows how webpage is interpreted by assistive technologies and how accessible data are provided.
+- Assistive technologies simulate and relay user interactions like click and key press to accessibility tree.
+- As developers, we need to:
+  - Express the semantics of page correctly
+  - Specify accessible names and descriptions
+  - Make sure important elements have correct accessible roles, states, and properties
 
 ### ARIA attributes
 
@@ -220,5 +255,5 @@ References:
 
 - Accessibility in Chrome DevTool
 - [axe DevTools](https://www.deque.com/axe/devtools/)
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- [axe-core/react](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/react) and [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md)
