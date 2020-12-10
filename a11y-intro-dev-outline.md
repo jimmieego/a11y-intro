@@ -8,9 +8,9 @@
 - Shows how webpage is interpreted by assistive technologies and how accessible data are provided.
 - Assistive technologies simulate and relay user interactions like click and key press to accessibility tree.
 - As developers, we need to:
- - Express the semantics of page correctly
- - Specify accessible names and descriptions
- - Make sure important elements have correct accessible roles, states, and properties
+  - Express the semantics of page correctly
+  - Specify accessible names and descriptions
+  - Make sure important elements have correct accessible roles, states, and properties
 
 ### Semantics in native HTML
 
@@ -18,29 +18,29 @@
 - Native HTML elements are recognized by browsers and work predictably on a variety of platforms.
 - We should take advantage of built-in accessibility by writing HTML that expresses the semantics of page elements.
 - Example: `<a href="http://www.esri.com">Esri Homepage</a>`
- - Role="link"
- - Accessible name="Esri Homepage"
- - State="focusable"
+  - Role="link"
+  - Accessible name="Esri Homepage"
+  - State="focusable"
 - Example: `<label><input type="checkbox" checked>Working at Esri </label>`  
- - Role="checkbox"
- - Accessible name="Working at Esri"
- - State="focusable checked"   
+  - Role="checkbox"
+  - Accessible name="Working at Esri"
+  - State="focusable checked"   
 
 ### Neutral semantics
 
 - Some HTML elements do not convey semantics (role or state)
- - `<div>This is a block area</div>`
- - `<span>This is an inline area</span>`
+  - `<div>This is a block area</div>`
+  - `<span>This is an inline area</span>`
 - If the element is interactive, we need to do extra work:
- - Make it focusable: `tabindex="0"`
- - Receive keyboard events: <kbd>Enter</kbd>, <kbd>Space</kbd>
- - Name: explicit label (`label`) or implicit text (`aria-label`, `aria-labelledby`)
+  - Make it focusable: `tabindex="0"`
+  - Receive keyboard events: <kbd>Enter</kbd>, <kbd>Space</kbd>
+  - Name: explicit label (`label`) or implicit text (`aria-label`, `aria-labelledby`)
 
 ### Use cases of common semantic HTML elements
 
 - `ul` and `ol`
-- `button`
-- `a`
+- `button`: specify an action
+- `a`: specify a change in location
 - `<label>`
 
 ## Keyboard and focus management
@@ -48,25 +48,25 @@
 ### Keyboard
 
 - Interactive native HTML elements receive keyboard focus
- - `<a href>`
- - `<button>`
- - `<input>`
+  - `<a href>`
+  - `<button>`
+  - `<input>`
 - Interactive elements have expected interactions:
- - Link: click, tap, or <kbd>Enter</kbd> key
- - Button: click, tap, <kbd>Enter</kbd> key, or <kbd>Space</kbd> key
- - Input: click, tap, or <kbd>Enter</kbd> key   
+  - Link: click, tap, or <kbd>Enter</kbd> key
+  - Button: click, tap, <kbd>Enter</kbd> key, or <kbd>Space</kbd> key
+  - Input: click, tap, or <kbd>Enter</kbd> key   
 
 ### Focusable elements
 
 - Native interactive HTML elements are focusable:
- - Text fields
- - Buttons
- - Links
- - Select lists
+  - Text fields
+  - Buttons
+  - Links
+  - Select lists
 - Not focusable:
- - Paragraphs
- - Divs and spans
- - Headings
+  - Paragraphs
+  - Divs and spans
+  - Headings
 
 We should only focus elements that keyboard users need to interact with. Screen reader users have ways to read focusable and non-focusable elements (tab mode and browse mode).
 
@@ -89,70 +89,71 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
 - Specification for increasing accessibility of custom elements
 - Allows developers to modify and augment accessibility tree from standard DOM
 - ARIA doesn't augment any of the element's inherent behavior:
- - Focusable
- - Keyboard event listeners
+  - Focusable
+  - Keyboard event listeners
 - Custom behaviors still need to be implemented
 
 ### Why ARIA
 
 - Native HTML semantics should still be used whenever possible, but ARIA is useful when certain semantics, design patterns, or interactions make it impossible to do so.
- - Example: a pop-up menu, no standard HTML element
- - Example: a semantic characteristic "the user needs to know about this as soon as possible"
+  - Example: a pop-up menu, no standard HTML element
+  - Example: a semantic characteristic "the user needs to know about this as soon as possible"
 
 ### ARIA attributes
 
 - **Roles**
- - Landmarks
- - Widgets
+  - Landmarks
+  - Widgets
 - **Labels**
- - `aria-label`
- - `aria-labelledby`
+  - `aria-label`
+  - `aria-labelledby`
 - **Relationships**
- - `aria-owns`
- - `aria-describedby`
- - `aria-controls`
+  - `aria-owns`
+  - `aria-describedby`
+  - `aria-controls`
 
 ### Roles
 
-- Landmarks
- - `banner`: The main header of a page; typically assigned to a header element.
- - `contentinfo`: A collection of metadata, copyright information and the like.
- - `main`: the main content of a document.
- - `navigation`: A collection of links for navigation.
+- Landmarks: identify large content areas, used by screen readers for navigation, may have corresponding HTML elements
+  - `banner`: The main header of a page; typically assigned to a header element.
+  - `contentinfo`: A collection of metadata, copyright information and the like.
+  - `main`: the main content of a document.
+  - `navigation`: A collection of links for navigation.
 - Widgets
- - `alert`
- - `dialog`
- - `data grid`
- - `tab`
- - `tablist`
- - `tabpanel`
+  - `alert`
+  - `dialog`
+  - `data grid`
+  - `tab`
+  - `tablist`
+  - `tabpanel`
 
 ### Labels
 
 - `aria-label`
- - Specifies a string as accessible label
- - Overrides native labeling
+  - Specifies a string as accessible label
+  - Overrides native labeling
 - `aria-labelledby`
- - Specifies `id` of another element in the DOM as label of current element
- - Overrides all other name sources
- - Could be used on any element, not just labelable elements
- - Could take a list of `id`s
- - Could specify visually hidden elements  
+  - Specifies `id` of another element in the DOM as label of current element
+  - Overrides all other name sources
+  - Could be used on any element, not just labelable elements
+  - Could take a list of `id`s
+  - Could specify visually hidden elements  
 
 ### Relationships
 
 - `aria-owns`
- - Indicates an element should be treated as parent of another separate element in the DOM  
+  - Indicates an element should be treated as parent of another separate element in the DOM  
 - `aria-describedby`
- - Provides an accessible description for an element
- - References elements in the DOM separated from current element
+  - Provides an accessible description for an element
+  - References elements in the DOM separated from current element
 - `aria-controls`
- - Indicates an element "controls" another element in interaction  
+  - Indicates an element "controls" another element in interaction  
 
 
 ### ARIA use cases
 
 - Label and description
+  - Example: `<nav aria-label="primary">`
 - Relationship
 - States
 - Hide elements
@@ -176,6 +177,10 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
 | Label      | Does the element have accessible text label?    |
 | Role      | Does the element have appropriate ARIA role?   |
 | States and properties      | Does the element have any ARIA states and properties to show UI changes?    |
+
+References:
+
+- [a11yengineer.com: Web Accessibility Checklist](https://a11yengineer.com/web/)
 
 ### Text alternatives
 
@@ -213,5 +218,7 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
 
 ## Dev Tools
 
-- [axe-core](https://github.com/dequelabs/axe-core)
+- Accessibility in Chrome DevTool
+- [axe DevTools](https://www.deque.com/axe/devtools/)
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md)
