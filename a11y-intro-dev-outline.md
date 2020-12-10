@@ -36,6 +36,7 @@ versus
 
 - Easier to read and understand
 - Consistency
+- Semantic HTML communicates what's on a page to users of assistive technology, reader modes, conversational UIs, search engines, and more
 
 ### Semantics in native HTML
 
@@ -99,6 +100,13 @@ We should only focus elements that keyboard users need to interact with. Screen 
 
 Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we need to set `tabindex = "-1"` to programmatically move focus. In general, setting `tabindex` to a positive integer is anti-pattern.
 
+### Focus management patterns
+
+- Dropdowns and menus
+- Modals
+- View changes and deletes
+- Loading screens
+
 ### Offscreen elements
 
 - Example: [Calcite drawer pattern](http://esri.github.io/calcite-web/documentation/patterns/#drawers)
@@ -133,6 +141,25 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
   - Express the semantics of page correctly
   - Specify accessible names and descriptions
   - Make sure important elements have correct accessible roles, states, and properties
+
+Example: Expose accessibility information for focusable element:
+
+```jsx
+<div tabIndex="0"          // focusable
+     role="button"         // a button widget, not a div
+     aria-label="Close">   // an accessible name
+     onClick={clickHandler}
+     onKeyDown={keydownHandler}> 
+</div>
+```
+
+or just use a button:
+
+```jsx
+<button aria-label="Close"
+        onClick={clickHandler}>   
+</button>
+```
 
 ### ARIA attributes
 

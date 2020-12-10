@@ -52,6 +52,12 @@ References:
 - Tools
   - [Enhanced focus](https://pauljadam.com/demos/focusvisible.html)
   - Live Expression in Chrome DevTools: `document.activeElement` ([source](https://developers.google.com/web/tools/chrome-devtools/accessibility/focus))
+  
+  ```javascript
+  document.body.addEventListener('focusin', (event) => {
+    console.log(document.activeElement)
+  })
+  ```
 
 ## Screen reader test
 
@@ -106,6 +112,7 @@ Use VoiceOver to test an example app, [Park Locator](http://arcg.is/05DzDX)
 - Test app
   - [Park Locator](http://servicesbeta.esri.com/demos/a11y/index.html)
 - Tools
+  - [Chrome color picker & accessibility pane](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference#pane)
   - [Contrast ratio calculator](https://contrast-ratio.com/)
 
 ## Summary
