@@ -90,7 +90,7 @@ References:
   - Modals
   - Widgets
 
-### Practice screen reader
+### Practice screen reader test
 
 Use VoiceOver to test an example app, [Park Locator](http://arcg.is/05DzDX)
 
