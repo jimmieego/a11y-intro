@@ -102,6 +102,7 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
 
 ### Focus management patterns
 
+- Bypass blocks
 - Dropdowns and menus
 - Modals
 - View changes and deletes

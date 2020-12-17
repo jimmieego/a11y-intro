@@ -3,6 +3,7 @@
 ## Why accessibility testing
 
 - Accessibility is about the experience of all users
+- Users using assistive technologies (keyboard, screen reader) should have functionally equilvalent experience
 - Testing is the only way to ensure the experience is accessible
 - The goal is to verify how well web content functions as WCAG 2.0/2.1 specified
 
@@ -39,6 +40,7 @@ Use aXe to test an example app, [Park Locator](http://arcg.is/05DzDX)
 - [2.4.7](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html): See what item has focus at all times.
 - [2.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html): Visual focus order matches intended interaction order.
 - [2.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html): No keyboard trap.
+- [2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html): Bypass blocks of content that are repeated on multiple pages. 
 - Off-screen content (e.g., responsive navigation) should not receive focus when invisible.
 
 References:
@@ -106,6 +108,7 @@ Use VoiceOver to test an example app, [Park Locator](http://arcg.is/05DzDX)
 
 - [1.4.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html): Not use presentation that relies solely on color.
 - [1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html): Color contrast ratio is at least 4.5:1.
+- [1.4.11](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast): UI components and graphics have at laeast 3:1 contrast against adjacent colors.
 
 ### Practice color test
 
