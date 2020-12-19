@@ -49,6 +49,7 @@ Don't do this
 </div>
 <div id="footer"></div>
 ```
+<hr>
 
 Do this
 
@@ -72,7 +73,7 @@ Do this
 ## Why semantic HMTL
 
 - Easier to read and understand
-- Consistency
+- Consistency in implementation
 - Communicates content to assistive technology, reader modes, conversational UIs, search engines, and more
 
 
@@ -80,10 +81,10 @@ Do this
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## Semantic in native HTML
+## Semantics in native HTML
 
 - Most HTML elements have implicit semantics: role and state.
-- Native HTML elements are recognized by browsers and work predictably on a variety of platforms.
+- Native HTML elements are recognized by browsers, and they work predictably on a variety of platforms.
 - We should take advantage of built-in accessibility by writing HTML that expresses the semantics (intended purposes).
 
 
@@ -208,7 +209,7 @@ Interactive elements have expected interactions
 
 - `tabindex="0"`: Let DOM structure determine focus order
 - `tabindex="-1"`: Programmatically move focus
-- setting `tabindex` to a positive integer is anti-pattern
+- Setting `tabindex` to a positive integer is anti-pattern
 
 
 
@@ -231,7 +232,6 @@ Interactive elements have expected interactions
 <h2 class="centertitle">Bypass block/Skip to content</h2>
 
 Skip over repeated content on a page.
-
 Example: [Calcite Web Documentation](https://esri.github.io/calcite-web/documentation/)
 
 
@@ -254,7 +254,7 @@ Example: [Navigation menubar](https://www.w3.org/TR/wai-aria-practices-1.1/examp
 
 Trap keyboard focus when the modal is open.
 
-Example: [Modal dialog][https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html]
+Example: [Modal dialog](https://www.w3.org/TR/wai-aria-practices-1.1/examples/dialog-modal/dialog.html)
 
 
 
@@ -297,7 +297,7 @@ Example: [Calcite drawer pattern](http://esri.github.io/calcite-web/documentatio
 ## ARIA
 
 - Specification for increasing accessibility of custom elements
-- Allows developers to modify and augment accessibility tree from standard DOM
+- Allows developers to modify and augment *accessibility tree* from standard DOM
 
 
 
@@ -398,7 +398,7 @@ As developers, we need to:
 
 ## Roles
 
-Landmarks: identify large content areas, used by screen readers for navigation, some have corresponding HTML elements
+<p style="margin-left: 2.7em;">Landmarks: identify large content areas, used by screen readers for navigation, some have corresponding HTML elements.</p>
 
 - `banner`: The main header of a page; typically assigned to a header element.
 - `main`: the main content of a document.
@@ -412,7 +412,7 @@ Landmarks: identify large content areas, used by screen readers for navigation, 
 
 ## Roles
 
-Widgets
+<p style="margin-left: 2.7em;">Widgets</p>
 
 - `alert`
 - `dialog`
@@ -428,9 +428,10 @@ Widgets
 
 ## Labels
 
-- `aria-label`
-  - Specifies a string as accessible label
-  - Overrides native labeling
+<p style="margin-left: 2.7em;">`aria-label`</p>
+
+- Specifies a string as accessible label
+- Overrides native labeling
 
 
 
@@ -439,12 +440,13 @@ Widgets
 
 ## Labels
 
-- `aria-labelledby`
-  - Specifies `id` of another element in the DOM as label of current element
-  - Overrides all other name sources
-  - Could be used on any element, not just labelable elements
-  - Could take a list of `id`s
-  - Could specify visually hidden elements
+<p style="margin-left: 2.7em;">`aria-labelledby`</p>
+
+- Specifies `id` of another element in the DOM as label of current element
+- Overrides all other name sources
+- Could be used on any element, not just labelable elements
+- Could take a list of `id`s
+- Could specify visually hidden elements
 
 
 
@@ -453,8 +455,9 @@ Widgets
 
 ## Relationships
 
-- `aria-owns`
-  - Indicates an element should be treated as parent of another separate element in the DOM
+<p style="margin-left: 2.7em;">`aria-owns`</p>
+
+- Indicates an element should be treated as parent of another separate element in the DOM
 
 
 
@@ -463,9 +466,10 @@ Widgets
 
 ## Relationships
 
-- `aria-describedby`
-  - Provides an accessible description for an element
-  - References elements in the DOM separated from current element
+<p style="margin-left: 2.7em;">`aria-describedby`</p>
+
+- Provides an accessible description for an element
+- References elements in the DOM separated from current element
 
 
 
@@ -474,8 +478,9 @@ Widgets
 
 ## Relationships
 
-- `aria-controls`
-  - Indicates an element "controls" another element in interaction
+<p style="margin-left: 2.7em;">`aria-controls`</p>
+
+- Indicates an element "controls" another element in interaction
 
 
 
@@ -571,9 +576,7 @@ Widgets
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## Hide elements
-
-Elements explicitly hidden from the DOM will not be included in accessibility tree
+<p style="margin-left: 1.3em;">Elements explicitly hidden from the DOM will not be included in accessibility tree</p>
 
 ```css
 [hidden] {
@@ -589,7 +592,7 @@ Elements explicitly hidden from the DOM will not be included in accessibility tr
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-Elements not visually rendered but not explicitly hidden is still included in accessibility tree.
+<p style="margin-left: 1.3em;">Elements not visually rendered but not explicitly hidden is still included in accessibility tree.</p>
 
 ```css
 .screen-readers-only {
