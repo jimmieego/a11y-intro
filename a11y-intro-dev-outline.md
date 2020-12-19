@@ -106,7 +106,6 @@ Set `tabindex = "0"` and let DOM structure determine focus order. Sometimes we n
 - Dropdowns and menus
 - Modals
 - View changes and deletes
-- Loading screens
 
 ### Offscreen elements
 
@@ -279,7 +278,7 @@ References:
 - Avoid replacing visual label with placeholder text
 - Use `aria-label`, `aria-labelledby`, and `aria-describedby` if needed
 
-## Dev Tools
+## Dev tools
 
 - Accessibility in Chrome DevTool
 - [axe DevTools](https://www.deque.com/axe/devtools/)

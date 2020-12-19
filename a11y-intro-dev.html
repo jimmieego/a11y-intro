@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Accessibility for Web Developers</title>
+
+    <link rel="stylesheet" href="reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="styles/arcgisonline.css">
+
+    <!-- Custom style for this presentation -->
+    <style>
+        .reveal h1 {
+            font-size: 1.8em;
+        }
+
+        .reveal h1,
+        .reveal p {
+            margin-left: 1rem;
+            text-align: left;
+        }
+
+        .reveal h2 {
+            margin-left: 10%;
+            text-align: left;
+        }
+
+        .reveal h2.centertitle {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .reveal h2.twocoltitle {
+            margin-left: 1%;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .reveal section p.author {
+            margin-top: 1.5em;
+            line-height: 1.5;
+            font-size: 0.9em;
+        }
+
+        #slidesInfo {
+            font-size: 0.45em;
+            margin-top: 3em;
+            margin-left: 1rem;
+            margin-right: auto;
+        }
+
+        .reveal p.centerp {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        #wcagoverview {
+            height: 80%;
+            width: 80%;
+        }
+
+        .reveal section ul,
+        .reveal section ol {
+            width: 80%;
+            line-height: 1.4;
+        }
+
+        .reveal section .twocol {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .reveal .twocol .leftcol {
+            flex: 1 0 40%;
+            font-size: 0.8em;
+        }
+
+        .reveal .twocol .rightcol {
+            margin-left: 2.5rem;
+            max-width: 400px;
+            flex: 0 1 30%;
+        }
+
+        .reveal .source {
+            margin-left: 0;
+            margin-top: 2em;
+            text-align: center;
+            font-size: 0.45em;
+        }
+
+        #mssource {
+            margin: 0 auto;
+            font-size: 0.45em;
+            text-align: center;
+        }
+
+        #a11ymap {
+            width: 50%;
+            height: 50%;
+        }
+
+        #video {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #axe {
+            margin-left: 0;
+            margin-right: 0;
+            width: 80%;
+            height: 80%;
+        }
+
+        .reveal hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+
+        #msinclusive {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 31%;
+            width: 31%;
+        }
+
+        #gotowebinar {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 30%;
+            width: 30%;
+        }
+
+        .reveal ul.source {
+            list-style: none;
+            font-size: .7em;
+        }
+
+        .reveal ul.small {
+            font-size: 0.6em;
+        }
+
+        .reveal table {
+           font-size: 0.8em;
+        }
+
+    </style>
+
+    <!-- Theme used for syntax highlighting of code -->
+    <!-- <link rel="stylesheet" href="styles/monokai_sublime.css"> -->
+    <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <!-- Use external markdown resource, separate slides by ---; separate vertical slides by ----- -->
+            <section data-markdown="a11y-intro-dev.md" data-separator="^\r?\n---\r?\n"
+                data-separator-vertical="^\r?\n-----\r?\n">
+            </section>
+
+        </div>
+    </div>
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/notes/notes.js"></script>
+    <script src="reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+
+
+</body>
+
+</html>
