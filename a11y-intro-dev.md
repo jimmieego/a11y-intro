@@ -709,7 +709,8 @@ As developers, we need to:
 ## Dev tools
 
 - [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)
-- Accessibility tab in Chrome DevTool
+- [Accessibility In Chrome DevTools](https://www.smashingmagazine.com/2020/08/accessibility-chrome-devtools/)
+- [React Documentation on Accessibility](https://reactjs.org/docs/accessibility.html)
 - [axe DevTools](https://www.deque.com/axe/devtools/)
 - [axe-core/react](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/react) and [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
 - [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci/blob/master/docs/getting-started.md)
