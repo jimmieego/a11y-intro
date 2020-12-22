@@ -706,6 +706,17 @@ As developers, we need to:
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
+## Accessibility and React
+
+- Use React Fragments to avoid adding unnecessary container divs
+- use ref functions and lifecycle methods to manage focus
+- Manage focus in routing
+
+
+
+---
+<!-- .slide: data-background="images/background/01.svg" -->
+
 ## Dev tools
 
 - [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)

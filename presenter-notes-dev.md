@@ -35,3 +35,9 @@ Keyboard users should be able to access all functionalities without using the mo
 In our case, we need ARIA to create our own accessible widgets and elements that are not available as native HTML elements. 
 
 For React, ARIA attributes are fully supported in JSX, and therefore can be used as attributes for elements and components. Unlike most attributes, ARIA attributes should be lowercased when declared, but the fundamental usage remains the same as in HTML.
+
+## Accessibilty and React
+
+Create a ref for the component you want to add focus on. Attach the created ref to the element. Set the focus with a lifecycle method.
+
+Most React applications have routing. When a user navigates to a new page, nothing is announced by screen reader users. It's like nothing even happened. We can fix the React router problem with focus management. For example, when we change to a new page, we need to change the focus to the new component that was just mounted.
