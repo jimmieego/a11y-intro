@@ -279,7 +279,7 @@ Example: [To do list](https://codepen.io/heydon/pen/VpVNKW)
 - Set `display:none` or `visibility:hidden` when off screen
 - Set `display:block` or `visibility:visible` before showing it to user
 
-Example: [Calcite drawer pattern](http://esri.github.io/calcite-web/documentation/patterns/#drawers)
+<p style="margin-left: 3.1em;">Example: <a href="http://esri.github.io/calcite-web/documentation/patterns/#drawers">Calcite drawer pattern</a></p>
 
 
 
@@ -304,7 +304,7 @@ Example: [Calcite drawer pattern](http://esri.github.io/calcite-web/documentatio
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## Accessibility tree
+<h2 class="centertitle">Accessibility tree</h2>
 
 <div class="twocol" style="height: 50%; width: 50%; margin:auto;">
     <img src="images/aria_a11tree_1.jpg">
@@ -428,7 +428,7 @@ As developers, we need to:
 
 ## Labels
 
-<p style="margin-left: 2.7em;">`aria-label`</p>
+<p style="margin-left: 2.7em;"><code>aria-label</code></p>
 
 - Specifies a string as accessible label
 - Overrides native labeling
@@ -440,7 +440,7 @@ As developers, we need to:
 
 ## Labels
 
-<p style="margin-left: 2.7em;">`aria-labelledby`</p>
+<p style="margin-left: 2.7em;"><code>aria-labelledby</code></p>
 
 - Specifies `id` of another element in the DOM as label of current element
 - Overrides all other name sources
@@ -455,7 +455,7 @@ As developers, we need to:
 
 ## Relationships
 
-<p style="margin-left: 2.7em;">`aria-owns`</p>
+<p style="margin-left: 2.7em;"><code>aria-owns</code></p>
 
 - Indicates an element should be treated as parent of another separate element in the DOM
 
@@ -466,7 +466,7 @@ As developers, we need to:
 
 ## Relationships
 
-<p style="margin-left: 2.7em;">`aria-describedby`</p>
+<p style="margin-left: 2.7em;"><code>aria-describedby</code></p>
 
 - Provides an accessible description for an element
 - References elements in the DOM separated from current element
@@ -478,7 +478,7 @@ As developers, we need to:
 
 ## Relationships
 
-<p style="margin-left: 2.7em;">`aria-controls`</p>
+<p style="margin-left: 2.7em;"><code>aria-controls</code></p>
 
 - Indicates an element "controls" another element in interaction
 
@@ -569,7 +569,7 @@ As developers, we need to:
  </ul>
  ```
 
- <p style="font-size: 0.6em; margin:auto;"><code>aria-controls</code> is needed here because the two elements are not parent and child.</p>
+ <p style="font-size: 0.6em; margin:auto; text-align: center;"><code>aria-controls</code> is needed here because the two elements are not parent and child.</p>
 
 
 
@@ -708,7 +708,7 @@ As developers, we need to:
 
 ## Accessibility and React
 
-- Use React Fragments to avoid adding unnecessary container divs
+- Use React Fragments to avoid adding unnecessary container `div`s
 - use ref functions and lifecycle methods to manage focus
 - Manage focus in routing
 
