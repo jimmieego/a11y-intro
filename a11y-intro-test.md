@@ -69,7 +69,7 @@
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-Use aXe to test an example app: [Park Locator](http://arcg.is/05DzDX)
+Use aXe to test an example app: [Land Tour](https://experience.arcgis.com/experience/84e6f1ecb86c4c34840d1c47b1794757/)
 
 
 
@@ -85,7 +85,7 @@ Use aXe to test an example app: [Park Locator](http://arcg.is/05DzDX)
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## Expected outcomes
+## Expected outcomes (1/2)
 
 - [2.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html): Interact with all controls, links, and menus using only keyboard. 
 - [2.4.7](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html): See what item has focus at all times. 
@@ -96,7 +96,7 @@ Use aXe to test an example app: [Park Locator](http://arcg.is/05DzDX)
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## Expected outcomes
+## Expected outcomes (2/2)
 
 - [2.1.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html): No keyboard trap. 
 - [2.4.1](https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html): Bypass blocks of content that are repeated on multiple pages. 
@@ -107,7 +107,7 @@ Use aXe to test an example app: [Park Locator](http://arcg.is/05DzDX)
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-Use keyboard to test an example app: [Park Locator](http://arcg.is/05DzDX)
+Use keyboard to test an example app: [Land Tour](https://experience.arcgis.com/experience/84e6f1ecb86c4c34840d1c47b1794757/)
 
 (Remember to turn on key cast)
 
@@ -164,7 +164,7 @@ Use keyboard to test an example app: [Park Locator](http://arcg.is/05DzDX)
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-Use VoiceOver to test an example app: [Park Locator](http://arcg.is/05DzDX)
+Use VoiceOver to test an example app: [Land Tour](https://experience.arcgis.com/experience/84e6f1ecb86c4c34840d1c47b1794757/)
 
 
 
@@ -182,7 +182,7 @@ Use VoiceOver to test an example app: [Park Locator](http://arcg.is/05DzDX)
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-Test app: [Park Locator](http://servicesbeta.esri.com/demos/a11y/index.html)
+Test app: [Land Tour](https://experience.arcgis.com/experience/84e6f1ecb86c4c34840d1c47b1794757/)
 
 
 
