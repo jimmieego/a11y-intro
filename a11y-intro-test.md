@@ -6,7 +6,7 @@
     Tao Zhang
 </p>
 
-<p id="slidesInfo">Dec , 2020 · Esri Beijing R&D Center</p>
+<p id="slidesInfo">Dec 24, 2020 · Esri Beijing R&D Center</p>
 
 
 
