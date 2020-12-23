@@ -18,9 +18,9 @@ You might wonder why this is so important. After all, you could use div with CSS
 
 As you probably see in the example, semantic HTML is easier to read and understand. You don't have to look at the CSS class or ID to understand what an element is used for. 
 
-Semantic HTML leads to more consistent code. For example, when we need a header, using non-semantic HTML, different developers may write the header as <div class="header">, <div id="header">, or simply <div>. There are so many ways that we can create a header element, and they all depend on the personal preferences of developers. Using a standard semantic HTML element makes it easier for everyone.
+Semantic HTML leads to more consistent code. For example, when we need a header, using non-semantic HTML, different developers may write the header as `<div class="header">`, `<div id="header">`, or simply `<div>`. There are so many ways that we can create a header element, and they all depend on the personal preferences of developers. Using a standard semantic HTML element makes it easier for everyone.
 
-When we write semantic HTML, we’re letting the browser know what type of content it’s dealing with and how that content relates to other content. By doing this, assistive technology is more easily able to do its job because it has a structure that it can work with. Other technologies like the browser's reader mode, smart assistants like Siri and Alexa can also use information in the semantic HTML to display the correct content and styling. Search engines give more importance to keywords inside headings, links, etc. than keywords included in non-semantic <div>s, so content in semantic HTML will be more discoverable by users.
+When we write semantic HTML, we’re letting the browser know what type of content it’s dealing with and how that content relates to other content. By doing this, assistive technology is more easily able to do its job because it has a structure that it can work with. Other technologies like the browser's reader mode, smart assistants like Siri and Alexa can also use information in the semantic HTML to display the correct content and styling. Search engines give more importance to keywords inside headings, links, etc. than keywords included in non-semantic `<div>`s, so content in semantic HTML will be more discoverable by users.
 
 ## Semantics in native HTML
 
