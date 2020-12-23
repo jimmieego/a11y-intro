@@ -14,7 +14,7 @@ The first topic is semantics, which means the correct interpretation of the mean
 
 You might wonder why this is so important. After all, you could use div with CSS and JavaScript to make just about any web content. But semantic HTML does not take any longer to write than non-semantic HTML, if you do it consistently from the start. Even better, semantic HTML has benefits in accessibility and beyond.
 
-## Why semantic HMTL
+## Why semantic HTML
 
 As you probably see in the example, semantic HTML is easier to read and understand. You don't have to look at the CSS class or ID to understand what an element is used for. 
 
