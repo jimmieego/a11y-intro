@@ -171,7 +171,7 @@ Use VoiceOver to test an example app: [Land Tour](https://experience.arcgis.com/
 ---
 <!-- .slide: data-background="images/background/01.svg" -->
 
-## 3. Color accessibility test
+## 4. Color accessibility test
 
 - [1.4.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html): Not use presentation that relies solely on color.
 - [1.4.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html): Color contrast ratio is at least 4.5:1.
